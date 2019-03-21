@@ -1,6 +1,7 @@
 class Dice
-  def roll
-    rand(1..6)
+  def roll(number)
+    $rolls = []
+    number.times{$rolls << rand(1..6)}
   end
 
 end
