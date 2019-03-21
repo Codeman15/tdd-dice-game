@@ -25,8 +25,9 @@ describe 'Dice' do
     expect(dice.roll(number)).to eq $rolls.length
   end
 
-
-
-
-
+  it 'shows the results of each roll' do
+    dice = Dice.new
+    number = 2
+    expect(dice.rolls_total).to eq "You rolled: #{$rolls.join(', ')}"
+  end
 end
